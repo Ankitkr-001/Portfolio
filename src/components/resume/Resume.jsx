@@ -35,12 +35,12 @@ const Resume = () => {
               {/* design */}
               <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                  1. Python Programming
+                  1. IBM Certificate
                 </h1>
                 <h4 className="text-[1.4rem] font-semibold sm:text-xl">
-                  2. Python for web devlopment from IBM
+                  2. MongoDb 
                 </h4>
-                <h1 className="text-[1.4rem] font-semibold sm:text-xl">
+                {/* <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   3. MSCIT
                 </h1>
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
@@ -48,10 +48,10 @@ const Resume = () => {
                 </h1>
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   5. SQL from Itvedand education pvt.Itd.
-                </h1>
+                </h1> */}
                 <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base"></span>
                 <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
-                  June 2024 - Present
+                  February 2025 - Present
                 </span>
               </div>
             </div>

@@ -3,6 +3,36 @@ import { BsArrowRight } from "react-icons/bs";
 import { RiSendPlaneFill } from "react-icons/ri";
 
 const Contact = () => {
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "6ba92873-1ab3-4865-8b65-f908a88994ed");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
+
+
+
+  
   return (
     <div id="contact" className="container m-auto mt-16">
       {/* heading */}
@@ -22,9 +52,10 @@ const Contact = () => {
             <div 
             data-aos="zoom-in"
             >
-              <h1 className="text-5xl font-bold sm:text-3xl">You Need</h1>
+              <h1 className="text-5xl font-bold sm:text-3xl">For Hiring</h1>
+              <h1 className="text-3xl font-bold sm:text-3xl">And Contact</h1>
               <h3 className="text-xl sm:text-lg">
-                Beautiful design for your website leave a request
+                Kindly Mail here
               </h3>
             </div>
           </div>
@@ -41,6 +72,7 @@ const Contact = () => {
         </div>
         <div className="right flex-1">
           <form
+          onSubmit={onSubmit}
             
             data-aos="zoom-in"
             
@@ -71,7 +103,7 @@ const Contact = () => {
               className="bg-yellow-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
               type="submit"
             >
-              <span>Send</span>
+             <button type="submit">Submit now</button>
               <RiSendPlaneFill/>
             </button>
           </form>

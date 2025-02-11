@@ -22,7 +22,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="sm:text-[12px]">
-          | Copyright &copy; <span>2024 Rohit Wagh </span> All rights reserved
+          | Copyright &copy; <span>2025 Ankit kumar </span> All rights reserved
           <a href="#"></a> |
         </div>
       </div>
