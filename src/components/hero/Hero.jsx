@@ -34,7 +34,7 @@ const Hero = () => {
               // data-aos="fade-up"
               className=" text-[1.1rem] font-medium w-3/4 md:w-full text-gray-600 sm:text-[.95rem]"
             >
-              I am a Full Stack Devloper
+              I am a Full Stack Devloper 
             </p>
           </div>
           <div data-aos="fade-up" className="buttons flex gap-5">
@@ -42,7 +42,7 @@ const Hero = () => {
               href=""
               className=" bg-black text-[1rem] text-white px-10 py-2 sm:px-8 rounded-lg font-bold  hover:text-yellow-500"
             >
-              <span> Hire Me</span>
+              <span> Hire Me </span>
             </a>
             <a
               href={resumePDF}
